@@ -50,17 +50,18 @@ class liner_regression_class:
         return prediction
 
 #calculate mean and variance 
-dataset=[[1,2],[2,3],[1,3],[4,2],[5,3]]
-x=[row[0] for row in dataset]
-y=[row[1] for row in dataset]
 
-x_mean, y_mean=mean(x), mean(y)
-x_variance, y_variance=variance(x, x_mean), variance(y, y_mean)
-covar=covariance(x, x_mean, y, y_mean)
-print('x status : mean=%.3f variance=%.3f' %(x_mean, x_variance))
-print('y status : mean=%.3f variance=%.3f' %(y_mean, y_variance))
-print('covariance is %.3f' %(covar))
+# dataset=[[1,2],[2,3],[1,3],[4,2],[5,3]]
+# x=[row[0] for row in dataset]
+# y=[row[1] for row in dataset]
 
-c1=liner_regression_class()
-rmse=c1.algo(dataset, c1.liner_regression)
-print('rmse : %3f'% (rmse))
+# x_mean, y_mean=mean(x), mean(y)
+# x_variance, y_variance=variance(x, x_mean), variance(y, y_mean)
+# covar=covariance(x, x_mean, y, y_mean)
+# print('x status : mean=%.3f variance=%.3f' %(x_mean, x_variance))
+# print('y status : mean=%.3f variance=%.3f' %(y_mean, y_variance))
+# print('covariance is %.3f' %(covar))
+
+# c1=liner_regression_class()
+# rmse=c1.algo(dataset, c1.liner_regression)
+# print('rmse : %3f'% (rmse))
